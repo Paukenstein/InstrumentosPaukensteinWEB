@@ -1,0 +1,274 @@
+/* Color principal */
+:root {
+    --main-color: #ff6600;
+}
+
+/* Colores secundarios */
+:root {
+    --secondary-color-1: #00cc99;
+    --secondary-color-2: #9933cc;
+    --secondary-color-3: #ffcc00;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    background-image: url(img/banner.jpg);
+    text-align: center;
+    margin-bottom: 40px;
+    border-radius: 3px;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: #aca7a7;
+}
+
+.logo {
+    border: solid #000000 2px;
+    border-radius: 10px;
+    position: absolute;
+    left: 50px;
+    top: 10px;
+}
+
+.busqueda {
+    position: absolute;
+    right: 50px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+
+.tittle {
+    color: #fdb35e;
+    margin-left: 0%;
+    text-decoration: none;
+}
+
+header h1 {
+    font-size: 3em;
+    color: var(--main-color);
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    font-size:1.8em;
+    color: var(--main-color);
+}
+
+section p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+#productos-destacados ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#productos-destacados li {
+    width: 30%;
+    background-color: #e6771d;
+    color: #000000;
+    opacity: 0.8;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+#productos-destacados h3 {
+    font-size:1.5em;
+    color: #863a07
+}
+
+#productos-destacados p {
+    font-size: 1em;
+    color: #000000;
+}
+
+.caja {
+    display: flex;
+    padding: 10px;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+
+}
+
+form {
+    margin: 30px;
+    width: 50%;
+    display: grid;
+    gap: 10px;
+}
+
+#nuestra-historia {
+    width: 80%;
+    margin: 15px;
+    font-size:1em;
+}
+
+form label {
+    font-size: 1.5em;
+    color: var(--main-color);
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: var(--main-color);
+    color: #fff;
+    border: none;
+    border-radius: [omitted]
+}
+
+footer {
+    background-color: var(--main-color);
+    text-align: center; 
+    padding: 20px;
+    opacity: 0.8;
+    border-radius: 10px;
+}
+
+footer p {
+    margin: 0; 
+    color: #000000;
+    
+}
+
+
+/*ESTILOS NAVBAR*/
+
+nav {
+    position: relative;
+    background-color: var(--main-color);
+    font-weight: 400;
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    width:auto;
+    border-radius: 3px;
+  }
+  
+  nav .item {
+    font-size: 1.5em;
+    display: inline-block;
+    position: relative;
+    padding: 0 20px;
+    cursor: pointer;
+    z-index: 5;
+    width: auto;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: bold;
+  }
+  
+  .dropdown {
+    overflow: hidden;
+    list-style: none;
+    position: absolute;
+    padding: 0;
+    width: 100%;
+    left: 0;
+    top: 62px;
+    text-decoration: none;
+    color: #000000;
+
+
+  }
+  .dropdown > div {
+    transform: translate(0, -100%);
+    transition: all 0.5s 0.1s;
+    position: relative;
+    background-color: var(--main-color);
+    border-radius: 20px;
+    opacity: 0.9;
+    text-decoration: none;
+
+
+  }
+  
+  .dropdown a {
+    display: block;
+    padding: 0;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background: var(--color-primary);
+    text-decoration: none;
+    color: #000000;
+
+
+  }
+  
+  .dropdown a:hover {
+    background: #863a07;
+    text-decoration: none;
+    border-radius: 10px;
+
+  }
+  
+  .underline {
+    height: 6px;
+    background: var(--color-primary);
+    position: absolute;
+    bottom: 0;
+    width: 25%;
+    z-index: 2;
+    pointer-events: none;
+    transition: 0.35s;
+    text-decoration: none;
+
+  }
+  
+  nav .item:hover > .dropdown > div {
+    transform: translate(0);
+    text-decoration: none;
+
+  }
+  
+  nav .item:nth-child(1):hover ~ .underline {
+    transform: translate(0, 0);
+    text-decoration: none;
+
+  }
+  
+  nav .item:nth-child(2):hover ~ .underline {
+    transform: translate(100%, 0);
+    text-decoration: none;
+
+  }
+  
+  nav .item:nth-child(3):hover ~ .underline {
+    transform: translate(200%, 0);
+    text-decoration: none;
+
+  }
+  
+  nav .item:nth-child(4):hover ~ .underline {
+    transform: translate(300%, 0);
+    text-decoration: none;
+
+  }
